@@ -8,18 +8,18 @@ weekday[5] = 'Friday';
 weekday[6] = 'Saturday';
 /****************************************************** */
 const month = new Array(12);
-month[0] = 'January';
-month[1] = 'February';
-month[2] = 'March';
-month[3] = 'April';
-month[4] = 'May';
-month[5] = 'June';
-month[6] = 'July';
-month[7] = 'August';
-month[8] = 'September';
-month[9] = 'October';
-month[10] = 'November';
-month[11] = 'December';
+month[1] = 'January';
+month[2] = 'February';
+month[3] = 'March';
+month[4] = 'April';
+month[5] = 'May';
+month[6] = 'June';
+month[7] = 'July';
+month[8] = 'August';
+month[9] = 'September';
+month[10] = 'October';
+month[11] = 'November';
+month[12] = 'December';
 /****************************************************** */
 const GetTime = function () {
   /****************************************************** */
@@ -27,7 +27,7 @@ const GetTime = function () {
   /****************************************************** */
   const yy = update.getFullYear();
   const mm =
-    update.getMonth() + 1 < 10 ? '0' + update.getMonth() : update.getMonth();
+    update.getMonth() + 1 < 10 ? '0' + (update.getMonth() + 1) : update.getMonth() + 1;
   const dd = update.getDate() < 10 ? '0' + update.getDate() : update.getDate();
   const wd = weekday[update.getDay()];
   const h =
