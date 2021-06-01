@@ -29,20 +29,20 @@ const GetTime = function () {
   const mm =
     update.getMonth() + 1 < 10 ? '0' + (update.getMonth() + 1) : update.getMonth() + 1;
   const dd = update.getDate() < 10 ? '0' + update.getDate() : update.getDate();
-  const wd = weekday[update.getDay()];
   const h =
     update.getHours() < 10 ? '0' + update.getHours() : update.getHours();
   const m =
     update.getMinutes() < 10 ? '0' + update.getMinutes() : update.getMinutes();
   const s = update.getSeconds();
-  let MonthName = month[update.getMonth()]
+  const ddName = weekday[update.getDay()];
+  const mmName = month[update.getMonth()]
   /****************************************************** */
-  const clock = `${h}:${m} WIB`;
-  const date = `${wd}, ${dd} ${MonthName} ${yy}`;
-  const full = `${date}, ${clock}`;
-  const sdate = `${dd}/${update.getMonth() + 1}/${yy}, ${clock}`;
+  const clock = `${h}:${m}`;
+  const date1 = `${ddName}, ${dd} ${mmName} ${yy}`;
+  const full1 = `${date1}, ${clock}`;
+  const date2 = `${dd}/${mm}/${yy}, ${clock}`;
+  const full2 = `${date2}, ${clock}`;
   /****************************************************** */
-  return {yy, mm, dd, wd, h, m, s, clock, date, full, sdate};
+  return {yy, mm, dd, mmName, ddName, h, m, s, clock, date1, full1, date2, full2};
 };
-
 module.exports = GetTime;
