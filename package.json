@@ -1,0 +1,25 @@
+{
+  "name": "dni-get-time",
+  "version": "1.0.0",
+  "description": "get time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damar-nur-ichwan/dni-get-time.git"
+  },
+  "keywords": [
+    "dni",
+    "get",
+    "time",
+    "gettime"
+  ],
+  "author": "damar nur ichwan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damar-nur-ichwan/dni-get-time/issues"
+  },
+  "homepage": "https://github.com/damar-nur-ichwan/dni-get-time#readme"
+}
