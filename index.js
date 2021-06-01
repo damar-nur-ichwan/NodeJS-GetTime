@@ -40,7 +40,7 @@ const GetTime = function () {
   const clock = `${h}:${m}`;
   const date1 = `${ddName}, ${dd} ${mmName} ${yy}`;
   const full1 = `${date1}, ${clock}`;
-  const date2 = `${dd}/${mm}/${yy}, ${clock}`;
+  const date2 = `${dd}/${mm}/${yy}`;
   const full2 = `${date2}, ${clock}`;
   /****************************************************** */
   return {yy, mm, dd, mmName, ddName, h, m, s, clock, date1, full1, date2, full2};
